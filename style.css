@@ -1,17 +1,18 @@
-.mynavbar
-{
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-
-
-}
-
-.nava-item
+.navbar-item
 {
   padding: 20px;
   font-family: 'Open Sans Condensed', sans-serif;
+}
+body{
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: #BA6C1F;
+}
+
+.background-photo{
+	background-image: url('disaster-relief.jpg');
+	height: 70vh;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	background-image:contain;
 }
