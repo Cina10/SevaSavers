@@ -3,19 +3,27 @@
   text-shadow: 2px 2px 2px #ccc;
   font-family: 'Nobile',sans-serif, serif ;
 }
-.container-content{
-box-sizing: content-box;
-text-align: center;
-font-weight: 250;
-font-family: sans-serif, serif ;
-padding: 12%;
-}
+
 .containerFullScreenImage{
+
   width = 100%;
   height = auto;
+  box-sizing: content-box;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  font-size: 40px;
+  font-family: sans-serif, serif ;
+  padding: 12%;
+  background-image: url('disaster-relief.jpg')
+
 }
 
-.container-image{
-  width: auto;
-  height: auto;
+.containerContent{
+
+  box-sizing: content-box;
+  text-align: center;
+  font-weight: 250;
+  font-family: sans-serif, serif ;
+  padding: 8%;
 }
