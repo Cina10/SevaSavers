@@ -25,16 +25,20 @@ body{
 
 #intro{
 padding-top: 50px;
-padding-left: 5%;
-padding-right: 5%;
-font-size: 150%;
-font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #heading{
-color:#6A2C0Eo;
+margin: 30px;
+color:#6A2C0E;
 font-size: 200%;
-font-family: 'Pangolin', cursive;
+font-family: 'Rock Salt', cursive;
+}
 
-
+.text
+{
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 150%;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
