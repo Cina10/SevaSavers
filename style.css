@@ -1,0 +1,17 @@
+.mynavbar
+{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+}
+
+.nava-item
+{
+  padding: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
