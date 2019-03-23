@@ -5,10 +5,7 @@
 
   font-family: 'Open Sans Condensed', sans-serif;
 }
-body{
-  font-family: 'Open Sans Condensed', sans-serif;
-  background-color: #DEA959;
-}
+
 
 #photo-1{
 background-image: url('disaster-relief.jpg');
@@ -32,7 +29,7 @@ padding-top: 50px;
 
 #heading{
 background-color: #BA6C1F;
-margin: 30px;
+padding: 30px;
 color:#6A2C0E;
 font-size: 200%;
 font-family: 'Rock Salt', cursive;
@@ -54,7 +51,47 @@ font-family: 'Rock Salt', cursive;
 }
 
 h1{
-font-size: 30px;
+font-family: 'Rock Salt', cursive;
+font-size: 25px;
+color: #6A2C0E;
 font-weight: bold;
-padding: 3%;
+padding-top: 3%;
+padding-bottom: 3%;
 }
+
+input[type=text]
+{
+  width: 100%;
+  padding: 1px 20px;
+  margin: 1px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+}
+
+input[type=long-text]
+{
+  padding: 100px 20px;
+  width: 100%;
+  margin: 1px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+
+ input[type=submit]
+ {
+   border-radius: 10px;
+   background-color: #BA6C1F;
+   color:#6A2C0E;
+   border: none;
+   padding: 16px 32px;
+   text-decoration: none;
+   margin: 4px 2px;
+   cursor: pointer;
+ }
+
+ #footer{
+text-align: right;
+padding: 5px;
+ }
