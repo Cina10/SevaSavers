@@ -1,3 +1,15 @@
+/* Disaster Page Link */
+.disaster-page-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* Disaster Page Link on Hover */
+.disaster-page-link:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 /* Card Columns */
 .card-columns {
   padding: 20px;
