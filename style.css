@@ -1,7 +1,7 @@
-.navbar-item
+.nav-item
 {
-  font-size: 36%;
-  padding: 30px;
+  font-size: 20px;
+  color: black;
 
   font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -10,18 +10,21 @@ body{
   background-color: #BA6C1F;
 }
 
+#photo-1{
+background-image: url('disaster-relief.jpg');
+}
+
+#photo-2{
+background-image: url('hurricane-sandy.jpg');
+}
 .background-photo{
-	background-image: url('disaster-relief.jpg');
-  background-color: while;
   width:auto;
 	height: 70vh;
 	background-size: cover;
+  background-position: 50% 50%;
+	background-attachment: fixed;
 }
 
-.background-photo img{
-  opacity: 0.5;
-  disply: none;
-}
 
 #intro{
 padding-top: 50px;
@@ -41,4 +44,10 @@ font-family: 'Rock Salt', cursive;
   padding-right: 5%;
   font-size: 150%;
   font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#attribute
+{
+  text-align: right;
+
 }
