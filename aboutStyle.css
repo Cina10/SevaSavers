@@ -10,6 +10,10 @@ font-weight: 250;
 font-family: sans-serif, serif ;
 padding: 12%;
 }
+.containerFullScreenImage{
+  width = 100%;
+  height = auto;
+}
 
 .container-image{
   width: auto;
