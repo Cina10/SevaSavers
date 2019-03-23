@@ -1,6 +1,8 @@
 .navbar-item
 {
-  padding: 20px;
+  font-size: 36%;
+  padding: 30px;
+
   font-family: 'Open Sans Condensed', sans-serif;
 }
 body{
@@ -10,9 +12,27 @@ body{
 
 .background-photo{
 	background-image: url('disaster-relief.jpg');
+  background-color: while;
+  width:auto;
 	height: 70vh;
 	background-size: cover;
-	background-position: 50% 50%;
-	background-attachment: fixed;
-	background-image:contain;
+}
+
+.background-photo img{
+  opacity: 0.5;
+  disply: none;
+}
+
+#intro{
+padding-top: 70px;
+padding-left: 5%;
+padding-right: 5%;
+font-size: 150%;
+font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#heading{
+background color: #6A2C0E;
+
+
 }
