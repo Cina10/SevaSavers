@@ -24,7 +24,7 @@ body{
 }
 
 #intro{
-padding-top: 70px;
+padding-top: 50px;
 padding-left: 5%;
 padding-right: 5%;
 font-size: 150%;
@@ -32,7 +32,9 @@ font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #heading{
-background color: #6A2C0E;
+color:#6A2C0E
+font-size: 200%;
+font-family: 'Papyrus', sans-serif;
 
 
 }
