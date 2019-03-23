@@ -7,7 +7,7 @@
 }
 body{
   font-family: 'Open Sans Condensed', sans-serif;
-  background-color: #BA6C1F;
+  background-color: #DEA959;
 }
 
 #photo-1{
@@ -31,6 +31,7 @@ padding-top: 50px;
 }
 
 #heading{
+background-color: #BA6C1F;
 margin: 30px;
 color:#6A2C0E;
 font-size: 200%;
@@ -50,4 +51,10 @@ font-family: 'Rock Salt', cursive;
 {
   text-align: right;
 
+}
+
+h1{
+font-size: 30px;
+font-weight: bold;
+padding: 3%;
 }
