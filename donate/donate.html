@@ -75,7 +75,7 @@
 
                 // Create bg img class
                 const cardImg = document.createElement('img');
-                cardLink.setAttribute('class', 'card-img');
+                cardImg.setAttribute('class', 'card-img img-responsive');
                 cardImg.setAttribute('src', 'placeholder-image.jpg');
 
                 // Create bg img class
@@ -84,27 +84,27 @@
 
                 // Create a p element and set the text content to the date
                 const cardDate = document.createElement('p');
-                cardImgDiv.setAttribute('class', 'text-right m-0');
+                cardDate.setAttribute('class', 'text-right m-0');
                 let disasterDate = query.fields.name.substring(query.fields.name.indexOf('-') + 2);
                 cardDate.textContent = disasterDate;
 
                 // Create a div with a card-body class
                 const cardBody = document.createElement('div');
-                card.setAttribute('class', 'card-body d-flex flex-column justify-content-center align-items-center text-center');
+                cardBody.setAttribute('class', 'card-body d-flex flex-column justify-content-center align-items-center text-center');
 
                 // Create an h2 with a card-title class and set the text content to the title
                 const cardTitle = document.createElement('h2');
-                card.setAttribute('class', 'card-title');
+                cardTitle.setAttribute('class', 'card-title');
 
                 let disasterTitle = query.fields.name.substring(0, query.fields.name.indexOf('-'));
                 cardTitle.textContent = disasterTitle;
 
                 // Create a p with a card-text class and set the text content to the description
                 const cardText = document.createElement('p');
-                card.setAttribute('class', 'card-text');
+                cardText.setAttribute('class', 'card-text');
 
                 let countriesAffected = "";
-                if (query.fields.country.length > 1) {
+                if (query.fields.country.length > 1 && query.fields.country.length <= 5) {
                   var i;
                   for (i = 0; i < query.fields.country.length; i++) {
                     if (i == 0) {
@@ -113,9 +113,16 @@
                       countriesAffected += ", " + query.fields.country[i].name;
                     }
                   }
-
-                } else {
-
+                } else if (query.fields.country.length > 5) {
+                  var i;
+                  for (i = 0; i < 5; i++) {
+                    if (i == 0) {
+                      countriesAffected += query.fields.country[i].name;
+                    } else {
+                      countriesAffected += ", " + query.fields.country[i].name;
+                    }
+                  }
+                  countriesAffected += "...";
                 }
 
                 cardText.textContent = countriesAffected;
