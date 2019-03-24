@@ -1,0 +1,28 @@
+{
+  "name": "sevasavers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "moltinService.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cina10/SevaSavers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cina10/SevaSavers/issues"
+  },
+  "homepage": "https://github.com/Cina10/SevaSavers#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.0",
+    "@moltin/sdk": "^3.19.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2"
+  }
+}
