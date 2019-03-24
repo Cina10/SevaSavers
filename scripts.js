@@ -1,5 +1,3 @@
-console.log("hello");
-
 const app = document.getElementById('root');
 
 
@@ -18,31 +16,41 @@ request.onload = function() {
   console.log(data);
   if (request.status >= 200 && request.status < 400) {
     data.data.forEach( query => {
+      // Create a link element to the card
+      const cardLink = document.createElement('a');
+      cardLink.setAttribute('class', 'card-as-link');
+      cardLink.setAttribute('href', '#');
+
       // Create a div with a card class
       const card = document.createElement('div');
-      card.setAttribute('class', 'card text-center');
+      card.setAttribute('class', 'card bg-light text-black');
 
-      // Create a div with a card-header class
-      const cardHeader = document.createElement('div');
-      card.setAttribute('class', 'card-header')
+      // Create bg img class
+      const cardImg = document.createElement('img');
+      cardImg.setAttribute('src', 'placeholder-image.jpg');
 
-      // Create a small and set the text content to the date
-      const cardHeaderText = document.createElement('small');
+      // Create bg img class
+      const cardImgDiv = document.createElement('div');
+      cardImgDiv.setAttribute('class', 'card-img-overlay d-flex flex-column');
+
+      // Create a p element and set the text content to the date
+      const cardDate = document.createElement('p');
+      cardImgDiv.setAttribute('class', 'text-right m-0');
       let disasterDate = query.fields.name.substring(query.fields.name.indexOf('-') + 2);
-      cardHeaderText.textContent = disasterDate;
+      cardDate.textContent = disasterDate;
 
       // Create a div with a card-body class
       const cardBody = document.createElement('div');
-      card.setAttribute('class', 'card-body');
+      card.setAttribute('class', 'card-body d-flex flex-column justify-content-center align-items-center text-center');
 
-      // Create an h4 with a card-title class and set the text content to the title
-      const cardTitle = document.createElement('h4');
+      // Create an h2 with a card-title class and set the text content to the title
+      const cardTitle = document.createElement('h2');
       card.setAttribute('class', 'card-title');
 
       let disasterTitle = query.fields.name.substring(0, query.fields.name.indexOf('-'));
       cardTitle.textContent = disasterTitle;
 
-      // Create a p  with a card-text class and set the text content to the description
+      // Create a p with a card-text class and set the text content to the description
       const cardText = document.createElement('p');
       card.setAttribute('class', 'card-text');
 
@@ -64,10 +72,12 @@ request.onload = function() {
       cardText.textContent = countriesAffected;
 
       // Append the cards to the container element
-      container.appendChild(card);
-      card.appendChild(cardHeader);
-      cardHeader.appendChild(cardHeaderText);
-      card.appendChild(cardBody);
+      container.appendChild(cardLink);
+      cardLink.appendChild(card);
+      card.appendChild(cardImg);
+      card.appendChild(cardImgDiv);
+      cardImgDiv.appendChild(cardDate);
+      cardImgDiv.appendChild(cardBody);
       cardBody.appendChild(cardTitle);
       cardBody.appendChild(cardText);
 
