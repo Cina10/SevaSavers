@@ -5,3 +5,11 @@
 body {
   background-color: var(--lightInfo);
 }
+
+.card {
+  min-height: 23.5em;
+}
+
+.card-img-top {
+  min-height: 100%;
+}
