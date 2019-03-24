@@ -1,6 +1,9 @@
+:root {
+  --lightInfo: #8ed0da;
+}
 
 body {
-  background-color: #8ed0da;
+  background-color: var(--lightInfo);
 }
 
 .disasters {
@@ -15,9 +18,4 @@ body {
 .card-as-link:hover {
   color: inherit;
   text-decoration: inherit;
-}
-
-.card-img {
-  min-height: 60px;
-  min-width: 60px;
 }

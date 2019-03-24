@@ -31,7 +31,7 @@ padding-top: 50px;
 background-color: #BA6C1F;
 padding: 30px;
 color:#6A2C0E;
-font-size: 200%;
+font-size: 250%;
 font-family: 'Rock Salt', cursive;
 }
 
@@ -52,7 +52,6 @@ font-family: 'Rock Salt', cursive;
 
 h1{
 font-family: 'Rock Salt', cursive;
-font-size: 25px;
 color: #6A2C0E;
 font-weight: bold;
 padding-top: 3%;
@@ -94,4 +93,12 @@ input[type=long-text]
  #footer{
 text-align: right;
 padding: 5px;
+background-color: #BA6C1F;
+color:#6A2C0E;
+ }
+
+ #check-out{
+background-color: white;
+border-radius: 10px;
+margin: 10px;
  }
