@@ -1,6 +1,9 @@
+:root {
+  --lightInfo: #8ed0da;
+}
 
 body {
-  background-color: #8ed0da;
+  background-color: var(--lightInfo);
 }
 
 .disasters {
