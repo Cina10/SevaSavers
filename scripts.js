@@ -1,12 +1,11 @@
+console.log("hello");
+
 const app = document.getElementById('root');
 
-const logo = document.createElement('img');
-logo.src = 'logo.png';
 
 const container = document.createElement('div');
 container.setAttribute('class', 'container');
 
-app.appendChild(logo);
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
@@ -21,44 +20,32 @@ request.onload = function() {
     data.data.forEach( query => {
       // Create a div with a card class
       const card = document.createElement('div');
-      card.setAttribute('class', 'card');
+      card.setAttribute('class', 'card text-center');
 
-      // Create an h1 and set the text content to the film's title
-      const h1 = document.createElement('h1');
+      // Create a div with a card-header class
+      const cardHeader = document.createElement('div');
+      card.setAttribute('class', 'card-header')
+
+      // Create a small and set the text content to the date
+      const cardHeaderText = document.createElement('small');
+      let disasterDate = query.fields.name.substring(query.fields.name.indexOf('-') + 2);
+      cardHeaderText.textContent = disasterDate;
+
+      // Create a div with a card-body class
+      const cardBody = document.createElement('div');
+      card.setAttribute('class', 'card-body');
+
+      // Create an h4 with a card-title class and set the text content to the title
+      const cardTitle = document.createElement('h4');
+      card.setAttribute('class', 'card-title');
 
       let disasterTitle = query.fields.name.substring(0, query.fields.name.indexOf('-'));
-      h1.textContent = disasterTitle;
+      cardTitle.textContent = disasterTitle;
 
-      // Create a p and set the text content to the film's description
-      const p = document.createElement('p');
+      // Create a p  with a card-text class and set the text content to the description
+      const cardText = document.createElement('p');
+      card.setAttribute('class', 'card-text');
 
-      let disasterDescrip = "";
-
-      var nestedRequest = new XMLHttpRequest();
-      nestedRequest.open('GET', `${query.href}`, true);
-      nestedRequest.onload = function() {
-        // Begin accessing JSON data here
-        var nestedData = JSON.parse(this.response);
-
-
-        if (request.status >= 200 && request.status < 400) {
-          nestedData.data.forEach( query2 => {
-
-            disasterDescrip = query2.fields.description.substring(0, 300);
-
-            const cardDescrip = `Date: ${disasterDate} ` +
-                `Countries Affected: ${countriesAffected} ` + `${disasterDescrip}`
-
-            p.textContent = `Date: ${disasterDate} ` +
-            `Countries Affected: ${countriesAffected} ` + `${disasterDescrip}`;
-          })
-        } else {
-          console.log('error')
-        }
-
-      };
-
-      let disasterDate = query.fields.name.substring(query.fields.name.indexOf('-') + 2);
       let countriesAffected = "";
       if (query.fields.country.length > 1) {
         var i;
@@ -70,20 +57,21 @@ request.onload = function() {
           }
         }
 
+      } else {
 
       }
 
-      console.log(`${disasterDescrip}`);
-
+      cardText.textContent = countriesAffected;
 
       // Append the cards to the container element
       container.appendChild(card);
+      card.appendChild(cardHeader);
+      cardHeader.appendChild(cardHeaderText);
+      card.appendChild(cardBody);
+      cardBody.appendChild(cardTitle);
+      cardBody.appendChild(cardText);
 
-      // Each card will contain an h1 OR a p
-      card.appendChild(h1);
-      card.appendChild(p);
 
-      nestedRequest.send();
     })
   } else {
     console.log('error')
