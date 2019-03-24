@@ -19,3 +19,7 @@ body {
   color: inherit;
   text-decoration: inherit;
 }
+
+.card {
+  min-height: 18em;
+}

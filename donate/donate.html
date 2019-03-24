@@ -75,11 +75,6 @@
                 card.setAttribute('class', 'card bg-light text-black');
 
                 // Create bg img class
-                const cardImg = document.createElement('img');
-                cardImg.setAttribute('class', 'card-img img-responsive');
-                cardImg.setAttribute('src', 'placeholder-image.jpg');
-
-                // Create bg img class
                 const cardImgDiv = document.createElement('div');
                 cardImgDiv.setAttribute('class', 'card-img-overlay d-flex flex-column');
 
@@ -131,7 +126,7 @@
                 // Append the cards to the container element
                 container.appendChild(cardLink);
                 cardLink.appendChild(card);
-                card.appendChild(cardImg);
+                // card.appendChild(cardImg);
                 card.appendChild(cardImgDiv);
                 cardImgDiv.appendChild(cardDate);
                 cardImgDiv.appendChild(cardBody);
