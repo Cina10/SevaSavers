@@ -1,7 +1,0 @@
-:root {
-  --lightInfo: #8ed0da;
-}
-
-body {
-  background-color: var(--lightInfo);
-}
