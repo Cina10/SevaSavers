@@ -1,45 +1,97 @@
-/* Remove Browser Defaults*/
-body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
-  margin: 0; padding: 0; border: 0;
-}
-
-body {
-  font-family: 'Open Sans Condensed', sans-serif;
-  background-color: #BA6C1F;
-}
-
-.navbar-item {
-  font-size: 36%;
-  padding: 30px;
+.nav-item
+{
+  font-size: 20px;
+  color: black;
 
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.navbar-nav .nav-link {
-  text-align: center; /* center the text */
+
+#photo-1{
+background-image: url('disaster-relief.jpg');
 }
 
+#photo-2{
+background-image: url('hurricane-sandy.jpg');
+}
 .background-photo{
-	background-image: url('disaster-relief.jpg');
-  background-color: while;
   width:auto;
 	height: 70vh;
 	background-size: cover;
+  background-position: 50% 50%;
+	background-attachment: fixed;
 }
 
-.background-photo img{
-  opacity: 0.5;
-  disply: none;
+
+#intro{
+padding-top: 50px;
 }
 
-#intro {
-  padding-top: 70px;
+#heading{
+background-color: #BA6C1F;
+padding: 30px;
+color:#6A2C0E;
+font-size: 200%;
+font-family: 'Rock Salt', cursive;
+}
+
+.text
+{
+  padding-top: 20px;
   padding-left: 5%;
   padding-right: 5%;
   font-size: 150%;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-#heading {
-  background color: #6A2C0E;
+#attribute
+{
+  text-align: right;
+
 }
+
+h1{
+font-family: 'Rock Salt', cursive;
+font-size: 25px;
+color: #6A2C0E;
+font-weight: bold;
+padding-top: 3%;
+padding-bottom: 3%;
+}
+
+input[type=text]
+{
+  width: 100%;
+  padding: 1px 20px;
+  margin: 1px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+}
+
+input[type=long-text]
+{
+  width: 100%;
+  height: 200px;
+  padding: 1px 20px;
+  margin: 1px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+ input[type=submit]
+ {
+   border-radius: 10px;
+   background-color: #BA6C1F;
+   color:#6A2C0E;
+   border: none;
+   padding: 16px 32px;
+   text-decoration: none;
+   margin: 4px 2px;
+   cursor: pointer;
+ }
+
+ #footer{
+text-align: right;
+padding: 5px;
+ }
