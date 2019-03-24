@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="169b0cb1-3182-4d12-b284-a4ffd8b1861b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/donate/disaster.css" beforeDir="false" afterPath="$PROJECT_DIR$/donate/disaster.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shopping_cart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/donate/disaster.html" beforeDir="false" afterPath="$PROJECT_DIR$/donate/disaster.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,10 +29,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/donate/disaster.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="69" column="212" selection-start-line="69" selection-start-column="212" selection-end-line="69" selection-end-column="212" />
+            <state relative-caret-position="474">
+              <caret line="143" column="71" selection-start-line="143" selection-start-column="71" selection-end-line="143" selection-end-column="71" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopping_cart.svg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -108,6 +114,11 @@
               <item name="SevaSavers" type="462c0819:PsiDirectoryNode" />
               <item name="donate" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SevaSavers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SevaSavers" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -144,12 +155,12 @@
       <option name="presentableId" value="Default" />
       <updated>1553378925801</updated>
       <workItem from="1553378927104" duration="7335000" />
-      <workItem from="1553412893012" duration="4941000" />
+      <workItem from="1553412893012" duration="6569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12669000" />
+    <option name="totallyTimeSpent" value="14297000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -200,6 +211,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/donate/placeholder-image.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping_cart.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/donate/donate.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -214,9 +231,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/donate/placeholder-image.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/donate/disaster.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -226,8 +240,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/donate/disaster.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="69" column="212" selection-start-line="69" selection-start-column="212" selection-end-line="69" selection-end-column="212" />
+        <state relative-caret-position="474">
+          <caret line="143" column="71" selection-start-line="143" selection-start-column="71" selection-end-line="143" selection-end-column="71" />
         </state>
       </provider>
     </entry>
