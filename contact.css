@@ -5,3 +5,15 @@
 body {
   background-color: var(--lightInfo);
 }
+
+.jumbotron {
+  padding-top: 3rem;
+}
+
+.col-md-9 {
+  max-width: 100%;
+}
+
+.btn-lg {
+  width: 20%;
+}
