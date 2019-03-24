@@ -5,3 +5,15 @@
 body {
   background-color: var(--lightInfo);
 }
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.avatar {
+  width: 20%;
+  height: 20%;
+  border: 5px solid;
+  border-radius: 50%;
+}
